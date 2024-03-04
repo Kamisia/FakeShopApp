@@ -1,5 +1,5 @@
 const Hero = () => {
-  return <div>Hero component</div>;
+  return <div className="hero-container">Hero component</div>;
 };
 
 export default Hero;
