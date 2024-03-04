@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <p>FakeShopApp</p>
       {isLoading && <div>Loading...</div>}
-      {isError && <div>Error fetching weather data</div>}
+      {isError && <div>Error fetching data</div>}
       {data && console.log(data)}
     </div>
   );
