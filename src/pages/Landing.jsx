@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 const Landing = () => {
   return (
-    <div>
+    <div className="landing">
       <Hero />
     </div>
   );

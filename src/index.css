@@ -3,7 +3,9 @@
   --withe-color: #f5cfe7;
   --black-color: #0b0117;
   --main-color: #6617cb;
+  --main-color-rgba: rgba(102, 23, 203, 0.7);
   --detail-color: #cb218e;
+  --detail-color-rgba: rgba(203, 33, 142, 0.7);
   --grey-color: #8c8891;
 
   /*SHADOW*/
@@ -25,6 +27,7 @@ html {
   background-color: var(--black-color);
   height: 100%;
 }
+
 /*Header*/
 .header {
   background-color: #6617cb;
@@ -57,5 +60,23 @@ html {
 }
 /*HomePage*/
 .hero-container {
+  height: 100vh;
+  width: 100%;
   color: var(--withe-color);
+  display: flex;
+  background-color: var(--detail-color-rgba);
+  padding: 1rem;
+  text-align: center;
+}
+.hero-container .image-container img {
+  width: 40%;
+  min-width: 350px;
+  border: solid 3px green;
+}
+.hero-container .text-container {
+  font-weight: 200;
+  width: 60%;
+  text-align: left;
+  border: solid 3px red;
+  min-width: 400px;
 }
