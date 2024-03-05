@@ -9,7 +9,9 @@
   --grey-color: #8c8891;
 
   /*SHADOW*/
-  --shadow: 0 0 10px 10px var(--grey-color);
+
+  --shadow: 0 4px 6px -1px rgba(11, 1, 23, 0.3),
+    0 2px 4px -1px rgba(11, 1, 23, 0.7);
 
   --transition: 0.1s ease-in-out all;
 }
@@ -71,12 +73,92 @@ html {
 .hero-container .image-container img {
   width: 40%;
   min-width: 350px;
-  border: solid 3px green;
 }
 .hero-container .text-container {
   font-weight: 200;
   width: 60%;
   text-align: left;
-  border: solid 3px red;
+
   min-width: 400px;
+  padding: 1rem;
+}
+.hero-container .text-container h1 {
+  font-weight: 400;
+  color: var(--black-color);
+  display: inline;
+}
+
+/*Products Container*/
+.products-container {
+  width: 100%;
+  min-height: 35vh;
+  background-color: var(--main-color-rgba);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+/*Product Card*/
+.product-card {
+  flex-grow: 0;
+  margin: 5px;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  box-shadow: var(--shadow);
+}
+
+.product-card .content {
+  background-color: transparent;
+  height: 300px;
+  text-align: left;
+  padding-top: 75%;
+  cursor: pointer;
+
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+}
+.product-card .content h1 {
+  opacity: 0;
+  height: 300px;
+
+  top: -150px;
+  position: relative;
+}
+.product-card .content h1 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  bottom: -140px;
+  color: var(--withe-color);
+  padding: 0.5rem;
+  height: 150px;
+  text-transform: uppercase;
+  opacity: 1;
+  top: 0px;
+  flex-wrap: wrap;
+}
+.product-card .content p {
+  color: var(--withe-color);
+  position: relative;
+  top: -140px;
+  float: inline-end;
+  border: var(--main-color) solid 3px;
+  background-color: var(--main-color);
+}
+.product-card button {
+  padding: 0.8rem;
+  border: none;
+  background-color: var(--detail-color);
+  cursor: pointer;
+  float: left;
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+}
+.product-card button:hover {
 }
